@@ -4,30 +4,29 @@
 # ==========================
 
 drama1 = {
-    "제목": "",            # IMPLEMENT ME
-    "장르": "",            # IMPLEMENT ME
-    "주제": "",            # IMPLEMENT ME
-    "방영기간": "",         # IMPLEMENT ME  (예: "2024-01-01 ~ 2024-02-01")
-    "배우": [],            # IMPLEMENT ME  (예: ["홍길동", "김코딩"])
-    "명대사": ""           # IMPLEMENT ME  (예: "\"이 또한 지나가리라.\"")
+    "제목": "도깨비",          
+    "장르": "판타지",           
+    "주제": "불멸의 삶을 끝내기 위해 인간 신부가 필요한 도깨비, 그와 기묘한 동거를 시작한 기억상실증 저승사자 그런 그들 앞에 '도깨비 신부'라 주장하는 '죽었어야 할 운명'의 소녀가 나타나며 벌어지는 신비로운 낭만 설화",          
+    "방영기간": "2016-12-02 ~ 2017-01-21",       
+    "배우": ["공유", "김고은", "이동욱"],           
+    "명대사": "\"누구의 인생이건 신이 머물다 가는 순간이 있다\""           
 }
 
 drama2 = {
-    "제목": "",            # IMPLEMENT ME
-    "장르": "",            # IMPLEMENT ME
-    "주제": "",            # IMPLEMENT ME
-    "방영기간": "",         # IMPLEMENT ME
-    "배우": [],            # IMPLEMENT ME
-    "명대사": ""           # IMPLEMENT ME
+    "제목": "시그널",            
+    "장르": "스릴러",           
+    "주제": "간.절.함.이..보.내.온..신.호 우리의 시간은 이어져 있다. 과거로부터 걸려온 간절한 신호로 연결된 현재와 과거의 형사들이 오래된 미제 사건들을 다시 파헤친다!",           
+    "배우": ["이제훈", "김혜수", "조진웅"],           
+    "명대사": "우리는 서로의 기억 속에 살아가고 있다."          
 }
 
 new_title = input("새 드라마 제목: ")  
 
-new_genre = ""                          # IMPLEMENT ME: input("새 드라마 장르: ")
-new_theme = ""                          # IMPLEMENT ME: input("새 드라마 주제: ")
-new_period = ""                         # IMPLEMENT ME: input("새 드라마 방영기간(예: 2024-01-01 ~ 2024-02-01): ")
-new_actors_input = ""                   # IMPLEMENT ME: input("새 드라마 배우들(쉼표로 구분): ")
-new_quote_raw = ""                      # IMPLEMENT ME: input("인상 깊었던 대사(따옴표 없이 입력): ")
+new_genre = input("새 드라마 장르: ")
+new_theme = input("새 드라마 주제: ")
+new_period = input("새 드라마 방영기간(예: 2024-01-01 ~ 2024-02-01): ")
+new_actors_input = input("새 드라마 배우들(쉼표로 구분): ")
+new_quote_raw = input("인상 깊었던 대사(따옴표 없이 입력): ")
 
 new_actors = new_actors_input.split(",")
 new_quote = f"\"{new_quote_raw}\""
@@ -43,11 +42,11 @@ drama3 = {
 
 
 upd_title = input("수정(덮어쓰기)할 제목(대상: drama2): ")  
-upd_genre = ""                         # IMPLEMENT ME: input("수정할 장르: ")
-upd_theme = ""                         # IMPLEMENT ME: input("수정할 주제: ")
-upd_period = ""                        # IMPLEMENT ME: input("수정할 방영기간: ")
-upd_actors_input = ""                  # IMPLEMENT ME: input("수정할 배우들(쉼표로 구분): ")
-upd_quote_raw = ""                     # IMPLEMENT ME: input("수정할 명대사(따옴표 없이 입력): ")
+upd_genre = input("수정할 장르: ")
+upd_theme = input("수정할 주제: ")
+upd_period = input("수정할 방영기간: ")
+upd_actors_input = input("수정할 배우들(쉼표로 구분): ")
+upd_quote_raw = input("수정할 명대사(따옴표 없이 입력): ")
 
 upd_actors = upd_actors_input.split(",")
 upd_quote = f"\"{upd_quote_raw}\""
